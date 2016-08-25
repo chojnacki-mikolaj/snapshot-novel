@@ -1,0 +1,75 @@
+%***********************************************************************%
+% VERSION	: 1.0							%
+% DATE		: 2016.08.24						%
+% AUTHOR	: Mikolaj Chojnacki					%
+% TITLE		: Snapshot						%
+%***********************************************************************%
+\documentclass[11pt,final,twoside]{book}
+
+%***************************************%
+% INCLUDE PACKAGES			%
+%***************************************%`
+\usepackage[a4paper,			%
+  left		= 2.5cm,		% inner (left) margin
+  right		= 2.5cm,		% outer (right) margin
+  bindingoffset	= 1.0cm,		% additional binding margin
+  top		= 3.0cm,		% top margin
+  bottom	= 3.0cm,		% bottom margin
+  includehead	= true,			% include header to page body
+  includefoot	= false,		% include footer to page body
+  showframe	= false			% 
+]{geometry}				%
+%\usepackage{amsmath,amsfonts,amsthm}
+\usepackage[OT4]{fontenc}		% font encoding with polish letters
+\usepackage[utf8]{inputenc}		% input encoding set to UTF-8
+\usepackage[polish]{babel}		%
+\pagestyle{headings}			% header style
+
+%***************************************%
+% BIBLIOGRAPHY STYLE			%
+%***************************************%
+%\bibliographystyle{}
+
+%***************************************%
+% MAIN DOCUMENT				%
+%***************************************%
+\begin{document}
+
+%***************************************%
+% TITLE PAGES				%
+%***************************************%
+\include{00_title}
+
+%***************************************%
+% TABLE OF CONTENTS			%
+%***************************************%
+\tableofcontents
+
+%***************************************%
+% CHAPTER 1 INTRODUCTION		%
+%***************************************%
+\include{01_intro}
+%***************************************%
+% CHAPTER 1 BEFORE			%
+%***************************************%
+\include{02_before}
+
+%***************************************%
+% APPENDIX				%
+%***************************************%
+%\appendix
+
+%***************************************%
+% APPENDIX A				%
+%***************************************%
+%\include{}
+
+%***************************************%
+% BIBLIOGRAPHY				%
+%***************************************%
+%\include{bib}
+
+%***************************************%
+% END OF MAIN DOCUMENT			%
+%***************************************%
+\end{document}
